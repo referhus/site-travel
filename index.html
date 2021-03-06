@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
  <header class="header">
@@ -18,10 +18,10 @@
     </div>
     <div class="menu">
      <ul>
-      <li><a class="nav" href="#">About Us</a></li>
-      <li><a class="nav" href="#">Tours</a></li>
-      <li><a class="nav" href="#">FAQ</a></li>
-      <li><a class="nav" href="#">Contacts</a></li>
+      <li><a class="nav scrollto" href="#about">About Us</a></li>
+      <li><a class="nav scrollto" href="#tours">Tours</a></li>
+      <li><a class="nav scrollto" href="#faq">FAQ</a></li>
+      <li><a class="nav scrollto" href="#">Contacts</a></li>
      </ul>
     </div>
    </div>
@@ -32,9 +32,9 @@
   </section>
  </header>
 
- <section class="container">
+ <section id="about" class="container">
   <span class="title-block">about company</span>
-  <div class="about">
+  <div  class="about">
    <div class="about-left">
     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua.</h2>
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -79,9 +79,9 @@
   </div>
  </section>
 
- <section class="container">
+ <section id="tours" class="container">
   <span class="title-block">popular tours</span>
-  <div class="tours">
+  <div  class="tours">
    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua.</h2>
    <div class="tours-menu">
     <a href="#">North America</a>
@@ -92,13 +92,12 @@
     </div>
    </div>
   </div>
-
  </section>
 
- <section class="container">
+ <section id="faq" class="container">
   <span class="title-block">your questions</span>
   <h2>Frequently Asked Questions</h2>
-  <div class="faq">
+  <div  class="faq">
    <div class="faq-accordion">
      <div class="accordion-item">
       <div class="item-header">
@@ -153,13 +152,23 @@
  </section>
 
 
- <!-- АККОРДЕОН-МЕНЮ -->
+<!-- АККОРДЕОН-МЕНЮ -->
 <script>
     $('.item-header').click(function() {
         $(".accordion-item").removeClass("active");
         $(this).parent().addClass("active");
     });
 
+
+/* ПЛАВНЫЙ СКРОЛЛ ПО ЯКОРЯМ */
+jQuery(document).ready(function() {
+jQuery("a.scrollto").click(function () {
+elementClick = jQuery(this).attr("href")
+destination = jQuery(elementClick).offset().top;
+jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+return false;
+});
+});
 </script>
 
 </body>
