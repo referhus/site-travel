@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <title>Travel</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="vegas.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="vegas.min.js"></script>
 </head>
 <body>
  <header class="header">
   <section class="container">
-   <div class="header--top">
-    <div class="top--logo">
-     <div class="logo--icon"></div>
-     <span class="logo--span">logotype</span>
+   <div class="header-top">
+    <div class="top-logo">
+     <div class="logo-icon"></div>
+     <span class="logo-span">logotype</span>
     </div>
-    <div class="top--menu">
+    <div class="menu">
      <ul>
       <li><a href="#">About Us</a></li>
       <li><a href="#">Tours</a></li>
@@ -27,7 +25,7 @@
      </ul>
     </div>
    </div>
-   <div class="header--info">
+   <div class="header-info">
     <h1>Travel with us around the world</h1>
     <span>Tristigue placerat lectus lectus</span>
    </div>
@@ -35,7 +33,7 @@
  </header>
 
  <section class="container">
-  <span class="orange-text">about company</span>
+  <span class="title-block">about company</span>
   <div class="about">
    <div class="about-left">
     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua.</h2>
@@ -51,8 +49,8 @@
  </section>
 
  <section class="container">
-  <span class="orange-text">our services</span>
-  <div class="services-content">
+  <span class="title-block">our services</span>
+  <div class="services">
    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
   </div>
@@ -82,8 +80,8 @@
  </section>
 
  <section class="container">
-  <span class="orange-text">popular tours</span>
-  <div class="tours-content">
+  <span class="title-block">popular tours</span>
+  <div class="tours">
    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua.</h2>
 
   </div>
@@ -91,7 +89,7 @@
  </section>
 
  <section class="container">
-  <span class="orange-text">your questions</span>
+  <span class="title-block">your questions</span>
   <h2>Frequently Asked Questions</h2>
   <div class="faq">
    <div class="faq-accordion">
@@ -144,6 +142,8 @@
   </div>
  </section>
 
+
+ <!-- АККОРДЕОН-МЕНЮ -->
 <script>
     $('.item-header').click(function() {
         $(".accordion-item").removeClass("active");

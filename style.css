@@ -11,6 +11,19 @@
     margin: 0 auto;
 }
 
+h2 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+
+p {
+    color: #4c4c4c;
+    line-height: 25px;
+}
+
+/* HEADER */
+
 .header {
     background-image: url("img/img-1.jpg");
     background-repeat: no-repeat;
@@ -32,18 +45,18 @@
     z-index: 2;
 }
 
-.header--top {
+.header-top {
     display: flex;
     justify-content: space-between;
 }
 
-.top--logo {
+.top-logo {
     display: flex;
     align-items: center;
     z-index: 3;
 }
 
-.logo--icon {
+.logo-icon {
     background-color: #fff;
     width: 30px;
     height: 30px;
@@ -51,30 +64,30 @@
     margin-right: 5px;
 }
 
-.logo--span {
+.logo-span {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.top--menu ul, .top--menu li {
+.menu ul, .menu li {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     z-index: 3;
 }
 
-.top--menu a {
+.menu a {
     color: #fff;
     text-decoration: none;
     margin-right: 40px;
 }
 
-.top--menu a:hover {
+.menu a:hover {
     font-weight: bold;
 }
 
-.header--info {
+.header-info {
     margin: 100px auto 300px;
     max-width: 700px;
     text-align: center;
@@ -83,15 +96,16 @@
     z-index: 3;
 }
 
-.header--info h1 {
+.header-info h1 {
     font-size: 80px;
     margin: 25px;
 }
 
-.header--info span {
+.header-info span {
     font-size: 16px;
 }
 
+/* СЛАЙДЕР ФОНА */
 
 @keyframes slide {
 0% {
@@ -105,9 +119,11 @@
     }
 }
 
-.orange-text {
+.title-block {
 	color: #f6981e;
 }
+
+/* ABOUT */
 
 .about {
 	margin-top: 15px;
@@ -117,17 +133,6 @@
 }
 .about-left {
 	flex-basis: 45%;
-}
-
-h2 {
-	font-size: 30px;
-	line-height: 45px;
-	margin-bottom: 40px;
-}
-
- p {
-	color: #4c4c4c;
-	line-height: 25px;
 }
 
 .button-more {
@@ -164,13 +169,15 @@ border: 3px solid #f6981e;
 	margin-bottom: 50px;
 }
 
-.services-content {
+/* SERVICES */
+
+.services {
 	display: flex;
 	justify-content: space-between;
 	margin: 15px 0;
 }
 
-.services-content h2, .services-content p {
+.services h2, .services p {
 flex-basis: 40%;
 }
 
@@ -197,12 +204,14 @@ flex-basis: 40%;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.tours-content h2 {
+/* TOURS */
+
+.tours h2 {
 	max-width: 750px;
 }
 
 
-
+/* FAQ */
 
 .faq {
     display: flex;
@@ -275,3 +284,4 @@ flex-basis: 40%;
 .faq-img img {
     margin: 5px;
 }
+
