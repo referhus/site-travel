@@ -181,14 +181,13 @@ flex-basis: 40%;
 }
 
 .accordion-item {
-    padding: 20px 20px 10px 20px;
-    margin-bottom: 20px;
-    border-radius: 6px;
+    padding: 0px 10px;
 }
 
 .item-header {
 	background-color: #f8f8f8;
-    padding: 30px;
+    padding: 20px 30px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -197,48 +196,36 @@ flex-basis: 40%;
 
 .title {
     font-size: 15px;
-    font-weight: 800;
-    color: #061e37;
-    text-transform: uppercase;
 }
 
 .favicon {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #061e37;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f6981e;
+    color: #fff;
+    text-align: center;
+}
+
+.favicon:before {
+    content: "+";
+    font-size: 25px;
 }
 
 .text {
-    padding: 0 6px;
+    padding: 0px 30px;
     max-height: 0;
     overflow: hidden;
     font-size: 15px;
     line-height: 25px;
-    font-weight: 600;
-    color: #061e37;
-}
-
-i {
-    color: #061e37;
-    margin-right: 27px;
-}
-
-.text img {
-    margin-right: 27px;
+    margin: 20px 0;
 }
 
 .accordion-item.active .text {
-    max-height: 600px;
+    max-height: 700px;
     transition: .4s linear;
 }
 
-.accordion-item.active .favicon {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid #061e37;
-    border-top: none;
+.accordion-item.active .favicon:before {
+    content: "–";
 }
